@@ -1,6 +1,6 @@
 const axios = require('axios')
 const apiToken = process.env.REACT_APP_TOKEN
-const queryString = `&language=en-US&region=ID&sort_by=release_date.desc&certification_country=ID&include_adult=false&include_video=false&page=1`
+const queryString = `&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`
 const movieDB_url = `https://api.themoviedb.org/3/discover/movie?`
 
 export const getMovies = () => {
